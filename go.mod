@@ -1,4 +1,4 @@
-module gitlab.com/cmdrev1/moduls
+module github.com/cmdrev/snippets
 
 go 1.21.5
 

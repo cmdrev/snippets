@@ -2,8 +2,8 @@ package databasefx
 
 import (
 	"go.uber.org/fx"
-	"shareing/pkg/config"
-	"shareing/pkg/database"
+	"github.com/cmdrev/snippets/config"
+	"github.com/cmdrev/snippets/database"
 )
 
 var PostgresModule = fx.Module("postgressession",

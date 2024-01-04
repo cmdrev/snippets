@@ -6,7 +6,7 @@ import (
 	"github.com/spf13/viper"
 	"go.uber.org/zap"
 	"go.uber.org/zap/zapcore"
-	"shareing/pkg/logger"
+	"github.com/cmdrev/snippets/logger"
 	"strings"
 )
 

@@ -3,7 +3,7 @@ package config
 import (
 	"fmt"
 	"github.com/spf13/viper"
-	"shareing/pkg/database"
+	"github.com/cmdrev/snippets/database"
 )
 
 type postgresData struct {
