@@ -21,7 +21,7 @@ func NewMongoDBSession(lc fx.Lifecycle, config database.MongoDBConfig) (*mongo.C
 	return client, nil
 }
 
-var MongoDBSession = fx.Module("mongodb-session",
+var MongoDBModule = fx.Module("mongodb-session",
 	fx.Provide(config.NewMongoDBConfig),
 	fx.Provide(NewMongoDBSession),
 )
