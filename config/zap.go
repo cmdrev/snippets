@@ -3,10 +3,10 @@ package config
 import (
 	"errors"
 	"fmt"
+	"github.com/cmdrev/snippets/logger"
 	"github.com/spf13/viper"
 	"go.uber.org/zap"
 	"go.uber.org/zap/zapcore"
-	"github.com/cmdrev/snippets/logger"
 	"strings"
 )
 
@@ -24,7 +24,7 @@ type ZapLog struct {
 func NewZapLogConfig(viperClient *viper.Viper) (logger.ZapLogConfig, error) {
 	zapConfig := ZapLog{}
 	configData := ZapLogConfig{}
-	err := viperClient.UnmarshalKey("logt", &configData)
+	err := viperClient.UnmarshalKey("logging", &configData)
 	if err != nil {
 		return nil, fmt.Errorf("could not unmarshal zap log configuration: %w", err)
 	}
